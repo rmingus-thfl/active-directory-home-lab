@@ -28,11 +28,19 @@ The Active Directory domain for this lab will be:
 
 This domain name was selected to represent a small corporate environment that can be expanded in future projects. The lab is designed to support additional servers and workstations as new technologies are added.
 
-## Network Design
+## Planned Network Configuration
 
-The virtual machines will communicate over a private virtual network within Oracle VirtualBox. This configuration allows the lab environment to function independently while maintaining internet access for software installation and updates.
+- VirtualBox Network Mode: NAT Network
+- Network Address: 10.0.10.0/24
+- Active Directory Domain: corp.home
 
-Additional networking details will be documented during the Virtual Environment Setup phase.
+### Planned IP Addressing
+
+| System | Planned Address |
+|---------|-----------------|
+| DC01 | 10.0.10.10 |
+| CLIENT01 | DHCP |
+| Future Servers | Reserved as needed |
 
 ## Architecture Diagram
 
